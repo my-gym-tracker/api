@@ -10,6 +10,24 @@ type UserCredentials struct {
 	Password string `json:"password"`
 }
 
+type RegisterReq struct {
+	UserCredentials
+}
+
+type RegisterRes struct {
+	UserId   int    `json:"userId"`
+	UserName string `json:"userName"`
+}
+
+type LoginReq struct {
+	UserCredentials
+}
+
+type LoginRes struct {
+	Token string `json:"token"`
+	User
+}
+
 type User struct {
 	UserId int `json:"userId"`
 	UserCredentials
