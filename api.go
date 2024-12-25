@@ -4,6 +4,7 @@ type Error int
 
 const (
 	ErrorBadRequest          Error = 400
+	ErrorNotFound            Error = 404
 	ErrorInternalServerError Error = 500
 )
 
