@@ -198,22 +198,3 @@ type UpdateSetRes struct {
 }
 
 type DeleteSetRes struct{}
-
-type Session struct {
-	SessionId      int
-	UserId         int
-	Token          string
-	IssuedAt       string
-	ExpirationTime string
-}
-
-type DBCreateSessionDBReq struct {
-	UserId         int
-	Token          string
-	IssuedAt       string
-	ExpirationTime string
-}
-
-type DBCreateSessionRes struct {
-	Session
-}
