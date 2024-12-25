@@ -1,9 +1,11 @@
 package api
 
-type Error struct {
-	Code    int
-	Message string
-}
+type Error int
+
+const (
+	ErrorBadRequest          Error = 400
+	ErrorInternalServerError Error = 500
+)
 
 type UserCredentials struct {
 	UserName string `json:"userName"`
