@@ -24,8 +24,8 @@ type LoginReq struct {
 }
 
 type LoginRes struct {
-	Token string `json:"token"`
-	User
+	Token  string `json:"token"`
+	UserId int    `json:"userId"`
 }
 
 type User struct {
