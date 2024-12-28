@@ -10,6 +10,11 @@ const (
 	ErrorInternalServerError Error = 500
 )
 
+type ErrorRes struct {
+	Code   Error
+	Reason string
+}
+
 type UserCredentials struct {
 	UserName string `json:"userName"`
 	Password string `json:"password"`
