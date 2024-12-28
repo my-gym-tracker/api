@@ -11,8 +11,8 @@ const (
 )
 
 type ErrorRes struct {
-	Code   Error
-	Reason string
+	Code   Error  `json:"code"`
+	Reason string `json:"reason"`
 }
 
 type UserCredentials struct {
