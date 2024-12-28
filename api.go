@@ -6,6 +6,7 @@ const (
 	ErrorBadRequest          Error = 400
 	ErrorUnauthorized        Error = 401
 	ErrorNotFound            Error = 404
+	ErrorConflict            Error = 409
 	ErrorInternalServerError Error = 500
 )
 
